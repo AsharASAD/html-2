@@ -130,13 +130,28 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="C:\Users\ashar\Downloads\400firefox.png" atl="Firefox logo">
+          <img
+          srcset="C:\Users\ashar\Downloads\smallestfirefox.png  120w,
+          C:\Users\ashar\Downloads\400firefox.png 400w"
+          sizes="(max-width:500px) 120px, 400px"
+           src="C:\Users\ashar\Downloads\400firefox.png" 
+           atl="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="C:\Users\ashar\Downloads\dino400.png" atl = "Dinosaur head">
+          <img 
+          srcset="C:\Users\ashar\Downloads\dino400.png 400w,
+          C:\Users\ashar\Downloads\poaphotos.png 120w"
+          sizes="(max-width:500px) 120px, 400px"
+          src="C:\Users\ashar\Downloads\dino400.png" 
+          atl = "Dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="C:\Users\ashar\Downloads\firefox-addons (1).jpg" atl = "firefox add-ons">
+          <img 
+          srcset="C:\Users\ashar\Downloads\firefox-addons (1).jpg 400w,
+          C:\Users\ashar\Downloads\fireaddon120.jpeg  120w"
+          sizes="(max-width:500px) 120px, 400px"
+          src="C:\Users\ashar\Downloads\firefox-addons (1).jpg"
+           atl = "firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="C:\Users\ashar\Downloads\mdn (1).svg"  alt="MDN - logo">
@@ -146,6 +161,11 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture> <source media="(max-width:600px)"
+            srcset="C:\Users\ashar\Downloads\red-panda.jpg">
+            <img src="C:\Users\ashar\Downloads\1200redpanda.jpeg" 
+            alt="RED panda">
+        </picture>
       </div>
 
     </main>
